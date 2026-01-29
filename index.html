@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arzoyx | Link în Bio</title>
+    <title>Arzoyx | Links</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
             background: radial-gradient(circle, #1a0b2e 0%, #050505 100%);
             color: white;
             display: flex;
@@ -21,79 +21,77 @@
             width: 90%;
             max-width: 400px;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             border: 3px solid #ff00ff;
-            box-shadow: 0 0 20px #bc13fe, 0 0 40px #ff00ff;
+            box-shadow: 0 0 25px #bc13fe;
             margin-bottom: 20px;
+            object-fit: cover;
         }
 
         h1 {
-            font-size: 24px;
-            letter-spacing: 2px;
-            text-shadow: 0 0 10px #ff00ff;
+            font-size: 28px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #ff00ff, #00f2ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
         }
 
-        .links-container {
-            margin-top: 30px;
+        .description {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 30px;
         }
 
         .link-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 15px;
+            padding: 18px;
             margin-bottom: 15px;
-            border-radius: 15px;
+            border-radius: 20px;
             text-decoration: none;
             color: white;
             display: block;
-            transition: all 0.3s ease;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+            transition: 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .link-card:hover {
-            transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
             border-color: #ff00ff;
-            box-shadow: 0 0 15px #ff00ff;
+            box-shadow: 0 10px 20px rgba(188, 19, 254, 0.3);
         }
 
-        .yt { border-left: 5px solid #ff0000; }
-        .tk { border-left: 5px solid #00f2ea; }
-        .ig { border-left: 5px solid #f09433; }
-
-        .footer {
-            margin-top: auto;
-            padding: 20px;
-            font-size: 12px;
-            opacity: 0.5;
-        }
+        /* Culori Neon pentru fiecare platforma */
+        .yt { border-bottom: 3px solid #ff0000; }
+        .tk { border-bottom: 3px solid #00f2ea; }
+        .ig { border-bottom: 3px solid #ff00ff; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://i.imgur.com/vHIn8E4.png" alt="Arzoyx Profile" class="profile-img">
+        <img src="1000019578.png" alt="Arzoyx" class="profile-img">
         
-        <h1>@Arzoyx</h1>
-        <p>Creator de conținut digital</p>
+        <h1>Arzoyx</h1>
+        <p class="description">Digital Content Creator</p>
 
         <div class="links-container">
-            <a href="https://www.youtube.com/@Arzoyx" class="link-card yt" target="_blank">YOUTUBE</a>
-            <a href="https://www.tiktok.com/@arzoyx" class="link-card tk" target="_blank">TIKTOK</a>
-            <a href="https://www.instagram.com/arzoyx" class="link-card ig" target="_blank">INSTAGRAM</a>
+            <a href="https://www.youtube.com/@Arzoyx" class="link-card yt" target="_blank">YouTube Channel</a>
+            <a href="https://www.tiktok.com/@arzoyx" class="link-card tk" target="_blank">TikTok Profile</a>
+            <a href="https://www.instagram.com/arzoyx" class="link-card ig" target="_blank">Instagram</a>
         </div>
-    </div>
-
-    <div class="footer">
-        © 2026 Arzoyx. Construit cu AI.
     </div>
 
 </body>
